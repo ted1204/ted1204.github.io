@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ted Huang - Full Stack Developer</title>
+    <title>PO-SHENG (TED) HUANG - CS Student & Developer</title>
     <style>
         * {
             margin: 0;
@@ -257,7 +257,135 @@
             color: var(--accent-color);
         }
 
-        /* Contact Section */
+        /* Education Section */
+        .education {
+            background-color: var(--white);
+        }
+
+        .education-content {
+            max-width: 800px;
+        }
+
+        .education-card {
+            background-color: var(--light-bg);
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .education-header {
+            padding: 1.5rem;
+            background-color: var(--white);
+        }
+
+        .education-header h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .degree {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .education-body {
+            padding: 1.5rem;
+            background-color: var(--light-bg);
+        }
+
+        .education-body p {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        /* Experience Section */
+        .experience {
+            background-color: var(--light-bg);
+        }
+
+        .experience-timeline {
+            max-width: 900px;
+            position: relative;
+        }
+
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--secondary-color);
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            margin-left: 80px;
+            position: relative;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -50px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            border: 3px solid var(--white);
+        }
+
+        .experience-header {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .experience-header h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .company {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+
+        .experience-body {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 5px;
+        }
+
+        .experience-body p {
+            margin-bottom: 0.8rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .experience-body ul {
+            margin-left: 1.5rem;
+            color: #666;
+        }
+
+        .experience-body li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
         .contact {
             background-color: var(--light-bg);
             text-align: center;
@@ -342,9 +470,11 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">Ted Chen</div>
+            <div class="logo">TED HUANG</div>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -354,10 +484,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Full Stack Developer</h1>
-            <p class="subtitle">Building scalable applications and solving complex problems</p>
+            <h1>PO-SHENG (TED) HUANG</h1>
+            <p class="subtitle">Computer Science Student | AI/Deep Learning Developer | Kubernetes & GPU Optimization</p>
             <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#projects" class="btn btn-primary">View My Projects</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
@@ -369,35 +499,78 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Hi! I'm Ted Chen</h3>
+                    <h3>Hi! I'm Ted Huang</h3>
                     <p>
-                        I'm a passionate full stack developer with a strong focus on creating clean, 
-                        efficient code and delivering exceptional user experiences. With expertise in modern 
-                        web technologies, I enjoy tackling complex technical challenges and learning new skills.
+                        I'm a Computer Science student at National Tsing Hua University with a strong background 
+                        in object-oriented programming, deep learning, and cloud infrastructure. I'm passionate about 
+                        building AI models and optimizing distributed systems.
                     </p>
                     <p>
-                        My experience spans across frontend and backend development, with a particular interest in 
-                        building responsive web applications and scalable backend systems.
+                        My expertise spans from developing multi-modal emotion recognition systems to implementing 
+                        Kubernetes-based GPU scheduling strategies. I love tackling complex technical challenges and 
+                        continuously expanding my skillset in emerging technologies.
                     </p>
                 </div>
                 <div>
                     <h3>Key Skills</h3>
                     <div class="skills-grid">
-                        <div class="skill-tag">JavaScript</div>
-                        <div class="skill-tag">TypeScript</div>
-                        <div class="skill-tag">React</div>
-                        <div class="skill-tag">Node.js</div>
                         <div class="skill-tag">Python</div>
-                        <div class="skill-tag">SQL</div>
+                        <div class="skill-tag">C/C++</div>
+                        <div class="skill-tag">Deep Learning</div>
+                        <div class="skill-tag">PyTorch</div>
+                        <div class="skill-tag">Kubernetes</div>
+                        <div class="skill-tag">GPU Optimization</div>
+                        <div class="skill-tag">PostgreSQL</div>
                         <div class="skill-tag">Git</div>
-                        <div class="skill-tag">HTML/CSS</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>National Tsing Hua University (NTHU)</h3>
+                        <p class="degree">Bachelor of Science in Computer Science</p>
+                        <p class="timeline">Expected Graduation: 2026</p>
+                    </div>
+                    <div class="education-body">
+                        <p><strong>Overall GPA:</strong> 3.98 / 4.3</p>
+                        <p><strong>GRE Score:</strong> 322, Analytical Writing: 2.5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Summer Research Intern</h3>
+                        <p class="company">Academia Sinica</p>
+                        <p class="timeline">Jul 2025 - Aug 2025</p>
+                    </div>
+                    <div class="experience-body">
+                        <p><strong>Topic:</strong> Multi-modality Emotion Recognition in Conversation (ERC) using Deep Learning</p>
+                        <ul>
+                            <li>Developed a deep learning multi-modal emotion recognition model taking text and voice inputs</li>
+                            <li>Integrated WavLM and emotion2vec representations to enhance multimodal feature learning</li>
+                            <li>Achieved performance improvement on IEMOCAP dataset, increasing weighted F1 score from 66.30 to 67.25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="projects" class="projects">
         <div class="container">
             <h2>Featured Projects</h2>
@@ -405,22 +578,23 @@
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-card-header">
-                        <h3>Project Name</h3>
-                        <p style="opacity: 0.9;">Brief description of the project</p>
+                        <h3>Academic Platform for AI Workload</h3>
+                        <p style="opacity: 0.9;">Jan 2025 - Present</p>
                     </div>
                     <div class="project-card-body">
                         <p>
-                            Add a detailed description of your project here. Explain what problem it solves, 
-                            the technologies used, and your role in building it.
+                            Built a platform for NTHU instructors to host containerized course applications. 
+                            Integrated NVIDIA MPS with Kubernetes for fair GPU sharing and developed heterogeneous 
+                            GPU scheduling strategies to minimize latency across different GPU types.
                         </p>
                         <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Kubernetes</span>
+                            <span class="project-tag">GPU Optimization</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="#">Live Demo</a>
-                            <a href="#">GitHub</a>
+                            <a href="https://github.com/ted1204">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -428,22 +602,23 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-card-header">
-                        <h3>Project Name</h3>
-                        <p style="opacity: 0.9;">Brief description of the project</p>
+                        <h3>Multi-Modal Emotion Recognition (ERC)</h3>
+                        <p style="opacity: 0.9;">Jul 2025 - Aug 2025 (Academia Sinica Intern)</p>
                     </div>
                     <div class="project-card-body">
                         <p>
-                            Add a detailed description of your project here. Explain what problem it solves, 
-                            the technologies used, and your role in building it.
+                            Developed a deep learning model for multi-modal emotion recognition using text and voice inputs. 
+                            Integrated WavLM and emotion2vec representations, improving IEMOCAP dataset F1 score 
+                            from 66.30 to 67.25.
                         </p>
                         <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Flask</span>
-                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Deep Learning</span>
+                            <span class="project-tag">PyTorch</span>
+                            <span class="project-tag">Multi-Modal</span>
+                            <span class="project-tag">NLP</span>
                         </div>
                         <div class="project-links">
-                            <a href="#">Live Demo</a>
-                            <a href="#">GitHub</a>
+                            <a href="https://github.com/ted1204">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -451,22 +626,93 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-card-header">
-                        <h3>Project Name</h3>
-                        <p style="opacity: 0.9;">Brief description of the project</p>
+                        <h3>Real-Time Dog Emotion Detection</h3>
+                        <p style="opacity: 0.9;">Oct 2024 - Jan 2025</p>
                     </div>
                     <div class="project-card-body">
                         <p>
-                            Add a detailed description of your project here. Explain what problem it solves, 
-                            the technologies used, and your role in building it.
+                            A two-stage real-time system detecting and classifying dog emotions into four classes: 
+                            happy, sad, relaxed, and angry. Achieved 69.9% classification accuracy on validation set 
+                            using YOLOv5 and MobileNetV2.
                         </p>
                         <div class="project-tags">
-                            <span class="project-tag">Vue.js</span>
-                            <span class="project-tag">Express</span>
-                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">YOLOv5</span>
+                            <span class="project-tag">MobileNetV2</span>
+                            <span class="project-tag">Computer Vision</span>
+                            <span class="project-tag">Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="#">Live Demo</a>
-                            <a href="#">GitHub</a>
+                            <a href="https://github.com/ted1204">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <h3>EEDI Diagnostic Math MCQ Kaggle Competition</h3>
+                        <p style="opacity: 0.9;">Oct 2024 - Jan 2025</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p>
+                            Fine-tuned Qwen2.5-7B-Math using LoRA with candidate ranking and CoT prompting techniques. 
+                            Placed 447th out of 1,449 teams (top 30%) in the competition.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">LLM</span>
+                            <span class="project-tag">LoRA</span>
+                            <span class="project-tag">Qwen2.5</span>
+                            <span class="project-tag">NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.kaggle.com">Kaggle</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <h3>Chat Assistant App with AI</h3>
+                        <p style="opacity: 0.9;">Mar 2024 - Jun 2024</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p>
+                            Integrated OpenAI API for intelligent text and image reply suggestions. 
+                            Supported four chat participant types for accurate tone matching. 
+                            Used Firebase backend for secure message storage.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">OpenAI API</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Mobile App</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ted1204">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <h3>FPGA Tetris Implementation</h3>
+                        <p style="opacity: 0.9;">Dec 2023 - Jan 2024</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p>
+                            Remade Tetris on Diligent Basys3 Artix-7 FPGA board from scratch. 
+                            Added features including different theme modes and difficulty levels.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">FPGA</span>
+                            <span class="project-tag">Verilog</span>
+                            <span class="project-tag">Hardware Design</span>
+                            <span class="project-tag">Basys3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ted1204">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -501,7 +747,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Ted Chen. All rights reserved.</p>
+        <p>&copy; 2026 PO-SHENG (TED) HUANG. All rights reserved.</p>
     </footer>
 </body>
 </html>
